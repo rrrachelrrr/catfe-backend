@@ -8,4 +8,23 @@ class UsersController < ApplicationController
     user = User.find_by(id: params[:id])
     render json: user
   end
+
+  def create
+    user = User.create(user_params)
+
+    if user.valid?
+      payload= {user_id: user.id}
+      token = JWT.encode(payload, 'meow', "HS256")
+      render json: {token:token}
+    else
+      render json: {errors: user.errors.full_messages}, status:"u cant even make a user?"
+    end
+  end
+
+
+  private
+  def user_params
+    params.permit(:name, :username, :password)
+  end
+
 end
