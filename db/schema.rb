@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_07_26_192155) do
 
   create_table "cats", force: :cascade do |t|
     t.string "name"
+    t.string "cat_img"
     t.string "owner", default: "cafe"
     t.boolean "adopted", default: false
     t.string "personality"
