@@ -14,6 +14,10 @@ class AuthController < ApplicationController
     end
   end
 
+  def show
+    render json: current_user
+  end
+
 
 
 end
