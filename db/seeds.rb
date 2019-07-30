@@ -55,8 +55,8 @@ Cat.create(
 
 Cat.create(
   name:'Boris',
-  cat_img:'',
-  personality: 'personality.samplettps://i.pinimg.com/originals/95/4e/c3/954ec356c19c4a624ca38265e3532e63.png',
+  cat_img: 'https://i.pinimg.com/originals/95/4e/c3/954ec356c19c4a624ca38265e3532e63.png',
+  personality: personality.sample,
   age: age.sample,
   breed: breed.sample,
   favorite_treat: treat.sample)
@@ -71,4 +71,4 @@ Cat.create(
 
 CatDate.create(user_id: User.all.sample.id , cat_id: Cat.all.sample.id, treat: treat.sample)
 
-p "SEEDED! 🐈" 
+p "SEEDED! 🐈"
