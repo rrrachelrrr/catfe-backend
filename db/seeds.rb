@@ -31,7 +31,7 @@ Cat.create(
 
 Cat.create(
   name:'Momo',
-  cat_img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU-3e0-uH6HL_Wc3aJAeK39tYaevHn2z_479zI3U6CArrVYFM2yA',
+  cat_img: 'https://pa1.narvii.com/6373/b56b2771a25ea01d1fdcfd40e8bc217963a0c1ae_hq.gif',
   personality: personality.sample,
   age: age.sample,
   breed: breed.sample,
@@ -47,7 +47,7 @@ Cat.create(
 
 Cat.create(
   name:'Lil Mama',
-  cat_img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRhVsc1zuY0KVEMVCvRC2uWaYt2ALkUkf0t8DzbiANm3Cvu6q7',
+  cat_img: 'http://cdn.lowgif.com/small/dc3734ee940f8e1d-kaz-terry-s-kaztee-cartoon-cat-album.gif',
   personality: personality.sample,
   age:age.sample,
   breed: breed.sample,
