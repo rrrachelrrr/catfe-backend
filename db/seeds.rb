@@ -10,13 +10,13 @@ User.destroy_all
 Cat.destroy_all
 CatDate.destroy_all
 
-personality= ['timid','friendly','always hungry','cuddly', 'loner','loud']
+personality = ['timid','friendly','always hungry','cuddly', 'loner','loud']
 
-age=[1..15]
+age = (1..15).to_a
 
-breed= ['siamese', 'norwegian', 'persian','tabby', 'munchkin','sphinx','chonki boi']
+breed= ['norwegian', 'shorthair', 'munchkin', 'chonki boi']
 
-treat= ['shrimp','chicken','seafood','beef']
+treat = ['shrimp','chicken','seafood','beef']
 
 User.create(name: 'duong', username: 'duong', password: 'duong')
 User.create(name: 'rachel', username: 'rara', password: 'rara')
@@ -25,13 +25,13 @@ Cat.create(
   name:'Popo',
   cat_img: 'https://i.pinimg.com/originals/f9/b0/8b/f9b08b9ae3fbfe4ef5aaceee56d5a250.gif',
   personality: personality.sample,
-  age:age.sample,
+  age: age.sample,
   breed: breed.sample,
   favorite_treat: treat.sample)
 
 Cat.create(
   name:'Momo',
-  cat_img: 'https://pa1.narvii.com/6373/b56b2771a25ea01d1fdcfd40e8bc217963a0c1ae_hq.gif',
+  cat_img: 'https://media.giphy.com/media/fWgx05OeLKsTjsJrw8/200.gif',
   personality: personality.sample,
   age: age.sample,
   breed: breed.sample,
@@ -47,7 +47,7 @@ Cat.create(
 
 Cat.create(
   name:'Lil Mama',
-  cat_img: 'http://cdn.lowgif.com/small/dc3734ee940f8e1d-kaz-terry-s-kaztee-cartoon-cat-album.gif',
+  cat_img: 'http://www.freepngclipart.com/thumb/cat/39735-cartoon-cats-cute-halloween-black-cat-image-thumb.png',
   personality: personality.sample,
   age:age.sample,
   breed: breed.sample,
