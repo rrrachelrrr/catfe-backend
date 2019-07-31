@@ -6,7 +6,6 @@ class CreateCats < ActiveRecord::Migration[5.2]
       t.string :owner, default: 'cafe'
       t.boolean :adopted, default: false
       t.string :personality
-      t.integer :affectionate, default: 0
       t.integer :age
       t.string :breed
       t.string :favorite_treat

@@ -3,9 +3,7 @@ class CreateCatDates < ActiveRecord::Migration[5.2]
     create_table :cat_dates do |t|
       t.integer :user_id
       t.integer :cat_id
-      t.integer :price, default: 10
-      t.string :treat
-
+      t.integer :affectionate, default: 0
       t.timestamps
     end
   end

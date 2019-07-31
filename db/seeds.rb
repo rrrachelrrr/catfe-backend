@@ -69,6 +69,5 @@ Cat.create(
   breed: breed.sample,
   favorite_treat: treat.sample)
 
-CatDate.create(user_id: User.all.sample.id , cat_id: Cat.all.sample.id, treat: treat.sample)
 
 p "SEEDED! 🐈"

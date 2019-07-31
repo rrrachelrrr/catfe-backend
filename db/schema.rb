@@ -18,8 +18,7 @@ ActiveRecord::Schema.define(version: 2019_07_26_192155) do
   create_table "cat_dates", force: :cascade do |t|
     t.integer "user_id"
     t.integer "cat_id"
-    t.integer "price", default: 10
-    t.string "treat"
+    t.integer "affectionate", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -30,7 +29,6 @@ ActiveRecord::Schema.define(version: 2019_07_26_192155) do
     t.string "owner", default: "cafe"
     t.boolean "adopted", default: false
     t.string "personality"
-    t.integer "affectionate", default: 0
     t.integer "age"
     t.string "breed"
     t.string "favorite_treat"
