@@ -21,7 +21,7 @@ class CatDatesController < ApplicationController
   end
 
   def update
-    cat_date =C atDate.find_by(id: params[:id])
+    cat_date =CatDate.find_by(id: params[:id])
     cat_date.update(cat_date_params)
     render json: cat_date
   end
