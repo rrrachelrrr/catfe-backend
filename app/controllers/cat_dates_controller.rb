@@ -20,15 +20,21 @@ class CatDatesController < ApplicationController
     render json: feed
   end
 
+  def update
+    cat_date =C atDate.find_by(id: params[:id])
+    cat_date.update(cat_date_params)
+    render json: cat_date
+  end
+
+
 private
 
-def feed_params
-  params.require(:CatDates).permit(:name, :age, :favorite_food)
-end
+# def feed_params
+#   params.require(:CatDates).permit(:name, :age, :affectionate)
+# end
 
-
-
-
-
+  def cat_date_params
+    params.permit(:affectionate)
+  end
 
 end
